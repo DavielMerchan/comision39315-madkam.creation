@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Tamaño de la fuente */
+html{
+    font-size: 62.5%;
+}
+
+/* Estilos body */
+body{
+    font-family:'Questrial', sans-serif;
+}
+
+/* Estilos de cabecera */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: lightgrey;
+    box-shadow:0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .inicio a img{
+    width: 120px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3rem;
+}
+
+header nav ul li {
+    padding: 20px 30px;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: brown;
+}
+
+header nav ul li a img {
+    width: 40px ;
+}
+
+header div button {
+    font-family:'Questrial', sans-serif;
+    background-color: lightgray;
+    font-size: 2rem;
+    border: 2px solid white ;
+    color: brown;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* INDEX */
+
+.hero{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 20px;
+    font-size: 2rem;
+    color:lightgray;
+    background-color: brown;
+
+}
+
+main h2{
+    text-align: center;
+    font-size: 2rem;
+    color: brown;
+    padding: 10px;
+}
+
+.carousel-inner {
+    width: 50%;
+    margin: 0 auto;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color:brown;
+
+}
+
+.productosPerso{
+    padding: 20px;
+}
+
+.personalizados{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.personalizados div{
+    display: flex;
+    flex-direction: column;
+}
+
+.personalizados div img{
+    width:400px;
+    height: 4s00px;
+    margin: 10px;
+}
+
+.personalizados div h3{
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.personalizados div button{
+    width: 100px;
+    background-color: lightgrey;
+    color: lightseagreen;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 10px;
+    border: white;
+}
+
+.personalizar {
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.personalizar a {
+    text-decoration: none;
+    color:lightseagreen;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.galeria p{
+    color: black;
+    padding: 20px;
+}
+
+.galeriaFotos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    margin: 5px;
+}
+
+.galeriaFotos div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.galeriaFotos div img{
+    height: 200px ;
+}
+
+.galeriaFotos div a{
+    text-decoration: none;
+    color: lightseagreen;
+}
+
+
+/* pag productos */
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    margin: 5px;
+}
+
+.productos div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.productos div img{
+    height: 200px ;
+}
+
+.productos div p{
+    font-size: 2rem;
+    padding: 3px;
+}
+
+/* Estilos footer*/
+footer {
+    background-color: lightgrey;
+    color: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.madkam a{
+    text-decoration: none;
+    color: brown;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+footer div p{
+    display: flex;
+    justify-content: center;
+}
+
+footer div p a{
+    text-decoration: none;
+    color: brown
+    }
+
+/* Media Queries */
+
+@media screen and (max-width: 768px){
+
+/* header */
+
+header nav ul{
+    font-size: 2rem;
+}
+
+header nav ul li {
+    padding: 20px 20px;
+}
+
+header nav ul li a img {
+    width: 20px;
+}
+
+header div button {
+    padding: 2px;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+/* Personalizados index */
+
+.personalizados div img {
+    width: 300px;
+    height: auto;
+}
+
+/* pag productos */
+
+.productos {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.productos div img {
+    height: 150px;
+}
+
+/* Footer */
+
+footer div p{
+    font-size: 1.5rem;
+}
+
+}
+
+@media screen and (max-width: 425px) {
+
+/* header */
+
+header .inicio {
+    margin-bottom: 20px;
+}
+
+header nav {
+    margin-bottom: 20px;
+}
+
+header div {
+    margin-top: 20px;
+}
+
+header nav ul {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+header nav ul li a img {
+    width: 30px;
+}
+
+/* personalizados Index */
+
+.productosPerso {
+    padding: 10px;
+}
+
+.personalizados {
+    flex-direction: column;
+}
+
+.personalizados div {
+    text-align: center;
+}
+
+.personalizados div img {
+    width: 300px;
+    height: auto;
+}
+
+.personalizar {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+/* banco de imagenes */
+
+.galeriaFotos {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.galeriaFotos div img{
+    height: 150px ;
+}
+
+/* Pag Productos */
+
+.productos {
+    grid-template-columns: 1fr;
+}
+
+.productos div {
+    margin-bottom: 10px;
+}
+
+.productos div img {
+    height: auto;
+    width:200px;
+}
+
+.productos div h2 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.productos div p {
+    font-size: 1.8rem;
+}
+
+/* footer */
+
+footer {
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.madkam a {
+    font-size: 2rem;
+}
+
+footer div {
+    margin: 10px 0;
+}
+
+footer div iframe{
+    display: none;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
