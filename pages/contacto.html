@@ -13,42 +13,59 @@
 </head>
 <body>
     <header>
-
-        <div class="inicio"> 
+        
+        <div> 
             <a href="../index.html"><img src="../assets/img/Logo-madkam.png" alt="Logo Madkam, pulpo de colores"></a>
         </div>
         <nav>
-            <ul>
-                <li><a href="./productos.html">Productos</a></li>
+            <ul class="navBar">
+                <li><a href="../pages/productos.html">Productos</a></li>
                 <li><a href="">Ofertas</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="https://www.instagram.com/madkam.creation/" target="_blank"><img src="../assets/img/instagram.png" alt="instagram"></a></li>
-                <li><a href="https://www.facebook.com/madkamcreations" target="_blank"><img src="../assets/img/facebook.png" alt="Facebook"></a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="https://www.instagram.com/madkam.creation/" target="_blank"><img src="../assets/img/instagram.png" alt="logo de instagram"></a></li>
+                <li><a href="https://www.facebook.com/madkamcreations" target="_blank"><img src="../assets/img/facebook.png" alt="logo de Facebook"></a></li>
             </ul>
         </nav>
-        <div>
+        <div class="navButton">
             <button>Ingresar</button>
         </div>
 
     </header>
 
-    <main>
-        <h1>Formulario de Contacto</h1>
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre"><br>
-    
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email"><br>
-    
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono"><br>
-    
-            <label for="mensaje">Mensaje:</label>
-            <input type="mensaje" id="mensaje" name="mensaje"><br>
-    
-            <input type="submit" value="Enviar">
-        </form>
+    <main class="mainContacto">
+        <h1>Completa el formulario y te responderemos a la brevedad.</h1>
+        <section class="contactoFormulario">
+            <form name="contact">
+                <fieldset>
+                    <div class="contactoDatos">
+                        <legend>Datos de contacto</legend>                    
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input type="text" name="nombre">
+                        <label for="mail">correo electrónico</label>
+                        <input type="mail" name="mail">
+                    </div>
+                    <div class="contactoDatos">
+                        <div> Indique tipo de consulta</div>
+                        <select name="tipo">Tipo de consulta
+                            <option value="tipo">Tipo de consulta</option>
+                            <option value="pago">Metodo de pago</option>
+                            <option value="devolucion">Devolucion</option>
+                            <option value="envio">Envio</option>
+                        </select>
+                    </div>
+                    <div class="contactoComentario">
+                        <div>
+                            <h3>Dejanos tu comentario</h3>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <input class="botonEnviar" type="submit" value="Enviar">
+                            <input class="botonLimpiar" type="reset" value="Limpiar formulario">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
     </main>
 
     <footer>

@@ -1,0 +1,18 @@
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./base/reset";
+@import "./components/bootstrap";
+@import "./Layout/header";
+@import "./Layout/main-index";
+@import "./Layout/main-productos";
+@import "./Layout/main-contacto";
+@import "./Layout/main-personalizar";
+@import "./Layout/main-remeraGris";
+@import "./Layout/footer";
+
+@import "./Layout/mediaQuerie-768";
+@import "./Layout/mediaQuerie-425";
+
+body{
+    font-family:'Questrial', sans-serif;
+}

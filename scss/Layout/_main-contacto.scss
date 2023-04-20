@@ -1,0 +1,57 @@
+.mainContacto{
+    display: flex;
+    flex-direction: column;
+    h1{
+        color: nth($colors, 3);
+        background-color: nth($colors, 1);
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 10px;
+    }
+    .contactoFormulario{
+        padding: 20px;
+        fieldset{
+            padding: 20px;
+            border: 2px solid nth($colors, 1);
+            border-radius: 5px;
+            .contactoDatos{
+                @include display (flex,none,none,column, 10px);
+                font-size: 2.5rem;
+                label{
+                    font-size: 2rem;
+                    }
+                input{
+                    height: 30px;
+                }
+                div{
+                    font-size: 2rem;
+                }
+                select{
+                    font-size: 2rem;
+                }
+            }
+            .contactoComentario{
+                @include display(flex,center,center,column,none);
+                font-size: 2rem;
+                
+                h3{
+                    font-size: 2rem;
+                }
+                .botonEnviar{
+                    @extend %botonRojo;
+                }
+                .botonLimpiar{
+                    font-family:'Questrial', sans-serif;
+                    font-size: 2rem;
+                    color: nth($colors, 1);
+                    background-color: nth($colors, 3);
+                    border: 2px solid nth($colors, 5);
+                    border-radius: 10px;
+                    padding: 10px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}   
+

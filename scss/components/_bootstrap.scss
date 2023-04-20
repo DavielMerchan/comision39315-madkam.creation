@@ -1,0 +1,14 @@
+.carousel-inner {
+    width: 50%;
+    margin: 0 auto;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color:nth($colors, 1);
+
+}

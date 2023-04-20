@@ -1,0 +1,24 @@
+footer{
+    background-color: nth($colors, 2);
+    color: nth($colors, 3);
+    @include display(flex,space-between,center,none,10px);
+    font-size: 2rem;
+    div{
+        a{
+            text-decoration: none;
+            color: nth($colors, 3);
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+    }
+    div{
+        p{
+            @include display(flex,center,center,none,none);
+            a{
+                text-decoration: none;
+                color: nth($colors, 3);
+            }
+        }
+    }
+}
+

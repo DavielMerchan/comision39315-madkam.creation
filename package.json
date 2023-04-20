@@ -1,0 +1,17 @@
+{
+  "name": "madkam-web",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hola 👋, soy Daviel Merchan</h1>\r <h3 align=\"center\">Esta es la pagina web para mi emprendimiento de productos personalizados, hacemos remeras, tazas, buzos y mucho mas. Espero que encuentres algo que te llame la atención.</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss ./scss/style.scss ./css/style.css",
+    "watch-css":"nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.22"
+  }
+}

@@ -1,0 +1,22 @@
+.mainPersonalizar{
+    h1{
+    color: nth($colors, 3);
+    background-color: nth($colors, 1);
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 10px;
+    }
+    section{
+        @include display(flex,center,none,column,20px);
+        div{
+            h2{
+                font-size: 3rem;
+                color: nth($colors, 1);
+                padding: 10px 5px 10px 5px;
+            }
+            p{
+                font-size: 2rem;
+            }
+        }
+    }
+}

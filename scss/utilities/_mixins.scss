@@ -1,0 +1,18 @@
+@mixin display($display,$justify, $align, $direction, $padding){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    padding: $padding;
+}
+
+@mixin grid($display,$columns,$rows,$gap,$margin){
+    display: $display;
+    grid-template-columns:$columns ;
+    grid-template-rows:$rows ;
+    gap:$gap ;
+    margin:$margin;
+}
+
+
+
