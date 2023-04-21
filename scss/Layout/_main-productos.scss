@@ -20,6 +20,9 @@
         p{
             font-size: 2rem;
             padding: 3px;
+            color: nth($colors, 5);
+            background-color: nth($colors, 2);
+            border-radius: 5px;
         }
     }
 }

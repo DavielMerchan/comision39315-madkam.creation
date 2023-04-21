@@ -1,7 +1,4 @@
 header{
-    @include display (flex,space-around,center,none,none);
-    background-color: nth($colors, 3 );
-    box-shadow:0px 1px 5px rgba(0, 0, 0, 0.1);
     div{
         a{
             img{
@@ -9,33 +6,15 @@ header{
             }
         }
     }
+
+    .navbar-collapse {
+    justify-content: flex-end;
+    padding-right: 20px;
 }
 
-.navBar{
-    @include display (flex,space-between,center,none,none);
+    .nav-link{
     font-size: 3rem;
-    li{
-        padding: 20px 30px;
-        list-style: none;
-        a{
-            text-decoration: none;
-            color: nth($colors, 1);
-            img{
-                width: 40px;
-            }
-        }
-    }
+    color: nth($colors, 1);
+    padding: 10px;
 }
-
-
-.navButton{
-    button{
-        font-family:'Questrial', sans-serif;
-        font-size: 2rem;
-        color: nth($colors, 1);
-        background-color: nth($colors, 3);
-        border: 2px solid nth($colors, 5);
-        border-radius: 10px;
-        padding: 10px;
-    }
 }

@@ -1,0 +1,205 @@
+
+@media screen and (max-width: 900px){
+//----------------------Main Index-----------------------
+    .personalizados{
+        div{
+            img{
+                width: 300px;
+                height: auto;
+                margin: 10px;
+            }
+        }
+    }
+} 
+
+
+@media screen and (max-width: 768px){
+
+//----------------------Main Index-----------------------
+    .hero{
+        h1{
+            font-size: 2rem;
+        }
+    }
+    .personalizados{
+        div{
+            img{
+                width: 200px;
+                height: auto;
+                margin: 10px;
+            }
+        }
+    }
+
+    .galeriaFotos{
+        grid-template-columns: repeat(2, 1fr);
+        div{
+            img{
+                height: 200px;
+            }
+        }
+    }
+
+//--------------------Pag Productos------------------------
+
+    .mainProductos{
+        div{
+            h1{
+                font-size: 2rem
+            }
+        }
+    }
+
+    .productos{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+//--------------------Footer-------------------------------
+
+    footer{
+        @include display(flex,none,center,column,none);
+        font-size: 1.5rem;
+        div{
+            iframe{
+                display: none;
+            }
+        }
+    }
+
+} 
+
+@media screen and (max-width: 425px){
+    //---------------------header--------------------------------
+    header{
+        div{
+            a{
+                img{
+                    width: 100px;
+                }
+            }
+        }
+    }
+
+
+    //---------------------Main Index
+
+    .personalizados{
+        div{
+            img{
+                width: 150px;
+                height: auto;
+                margin: 5px;
+            }
+        }
+    }
+
+    .galeriaFotos{
+        grid-template-columns: repeat(2, 1fr);
+        div{
+            img{
+                height: 150px;
+            }
+        }
+    }
+
+    //---------------------Pag Remera Gris---------------------
+    .mainProducto{
+        h1{
+            font-size: 2rem;
+        }
+        section{
+            div{
+                img{
+                    height: 200px;
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+
+    //--------------------Pag Productos------------------------
+    .productos{
+        grid-template-columns: repeat(1, 1fr);
+        div{
+            img{
+                height: 350px;
+            } 
+            p{
+                font-size: 1.5rem;
+            }
+        }      
+    }
+}
+
+@media screen and (max-width: 375px){
+
+    //Main Index
+
+    .personalizados{
+        div{
+            img{
+                width: 150px;
+                height: auto;
+                margin: 5px;
+            }
+        }
+    }
+
+    .personalizar{
+        font-size: 1.8rem;
+        padding: 10px 10px 10px 10px;
+    }
+    
+
+    .galeria{
+        h2{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.8rem;
+        }
+    }
+
+    .galeriaFotos{
+        grid-template-columns: repeat(1, 1fr);
+        div{
+            img{
+                height: 150px;
+            }
+        }
+    }
+
+    //--------------------Pag Productos------------------------
+    .productos{
+        grid-template-columns: repeat(2, 1fr);
+        div{
+            img{
+                height: 350px;
+                
+            } 
+            p{
+                font-size: 1.5rem;
+            }
+        }      
+    } 
+
+
+//-----------------------Footer------------------------
+
+footer{
+    div{
+        a{
+            font-size: 2rem;
+        }
+    }
+    div{
+        p{
+            a{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+}

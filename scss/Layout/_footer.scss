@@ -4,11 +4,21 @@ footer{
     @include display(flex,space-between,center,none,10px);
     font-size: 2rem;
     div{
+        @include display(flex,center,center,column,10px);
         a{
             text-decoration: none;
             color: nth($colors, 3);
             font-size: 2.5rem;
             font-weight: 600;
+        }
+        .redesSociales{
+            @include display(flex,center,center,row,none);
+            a{
+                img{
+                    padding: 10px;
+                    width: 50px;
+                }
+            }
         }
     }
     div{
