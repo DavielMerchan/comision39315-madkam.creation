@@ -1,0 +1,31 @@
+.mainProducto{
+    h1{
+        color: nth($colors, 3);
+        background-color: nth($colors, 1);
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 10px;
+    }
+    section{
+        @include display(flex,center,center,column,20px);
+        h2{
+            text-align: center;
+            padding: 10px;
+            color: nth($colors, 1);
+            font-size: 2.5rem;
+        }
+        div{
+            img{
+                width: 400px;
+                height: 400px;
+            }
+        }
+        div{
+            @include display(flex,center,center,column,10px);
+            font-size: 2rem;
+            button{
+                @extend %botonRojo;
+            }
+        }
+    }
+}
